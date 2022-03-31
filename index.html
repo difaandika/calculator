@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <div class="container">
-  <div class="item item-header">0</div>
-  
-  <button class="btn silver">AC</button>
-  <button class="btn silver">+/-</button>
-  <button class="btn silver">%</button>
-  <button class="btn orange">÷</button>
-  
-  <button class="btn">7</button>
-  <button class="btn">8</button>
-  <button class="btn">9</button>
-  <button class="btn orange">X</button>
-  
-  <button class="btn">4</button>
-  <button class="btn">5</button>
-  <button class="btn">6</button>
-  <button class="btn orange">-</button>
-  
-  <button class="btn">1</button>
-  <button class="btn">2</button>
-  <button class="btn">3</button>
-  <button class="btn orange">+</button>
-  
-  <button class="btn">0</button>
-  <button class="btn">0</button>
-  <button class="btn">.</button>
-  <button class="btn orange">=</button>
-  
-</div>
-  <script src="script.js"></script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <titel>CALCULATOR</titel>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="calculator">
+        <form action="" name="form">
+            <input class="textview" type="text" name="textview" />
+        </form>
+        <table>
+            <tr>
+                <td><button onclick="clean()">C</button></td>
+                <td><button onclick="back()"><</button></td>
+                <td><button onclick="insert('/')">/</button></td>
+                <td><button onclick="insert('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(7)">7</button></td>
+                <td><button onclick="insert(8)">8</button></td>
+                <td><button onclick="insert(9)">9</button></td>
+                <td><button onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(4)">4</button></td>
+                <td><button onclick="insert(5)">5</button></td>
+                <td><button onclick="insert(6)">6</button></td>
+                <td rowspan="2"><button style="height:125px" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(1)">1</button></td>
+                <td><button onclick="insert(2)">2</button></td>
+                <td><button onclick="insert(3)">3</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button style="width:125px" onclick="insert(0)">0</button></td>
+                <td><button onclick="insert('.')">.</button></td>
+                <td><button onclick="equal()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
